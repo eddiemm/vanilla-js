@@ -20,6 +20,10 @@ body {
     gap: 4rem;
 }
 
+header {
+    font-size: 2rem;
+}
+
 .accordion {
     width: 50%;
 }
@@ -36,17 +40,19 @@ body {
 }
 
 .accordion__trigger:active,
-.accordion__trigger:hover {
+.accordion__trigger:hover,
+.accordion__trigger.active {
     background-color: #d0d0d0;
     transition: .4s;
 }
 
 .accordion__content {
     width: 100%;
-    padding: 1rem;
-    display: none;
+    height: 0px;
+    overflow: hidden;
+    transition: .4s;
 }
 
-.visibility {
-    display: block;
+.content__text {
+    margin: 1rem;
 }

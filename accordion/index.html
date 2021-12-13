@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="#">
+
     <link href="styles.css" rel="stylesheet" type="text/css">
     
     <title>Accordion Component</title>
 </head>
 <body>
     <header>Accordion Component</header>
-    <script src="accordion.js" type="script/js" defer></script>
-
-    <div class="accordion">
-            <button id="trigger" class="accordion__trigger">One</button>
-            <p class="accordion__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, voluptate.</p>
-            <button id="trigger" class="accordion__trigger">Two</button>
-            <p class="accordion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi distinctio blanditiis, omnis iure explicabo!</p>
-            <button id="trigger" class="accordion__trigger">Three</button>
-            <p class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia eos ipsa.</p>
-            <button id="trigger" class="accordion__trigger">Four</button>
-            <p class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa modi, maiores asperiores deserunt veniam assumenda quas quasi sit.</p>
+    
+    <div id="accordion" class="accordion">
+        <button id="trigger" class="accordion__trigger">One</button>
+        <div class="accordion__content">
+            <p class="content__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, voluptate.</p>
+        </div>
+        <button id="trigger" class="accordion__trigger">Two</button>
+        <div class="accordion__content">
+            <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi distinctio blanditiis, omnis iure explicabo!</p>
+        </div>
+        <button id="trigger" class="accordion__trigger">Three</button>
+        <div class="accordion__content">
+            <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quia eos ipsa.</p>
+        </div>
+        <button id="trigger" class="accordion__trigger">Four</button>
+        <div class="accordion__content">
+            <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa modi, maiores asperiores deserunt veniam assumenda quas quasi sit.</p>
+        </div>
     </div>
+    <script type="module" src="accordion.js" type="script/js"></script>
 </body>
 </html>

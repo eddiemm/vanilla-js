@@ -9,3 +9,206 @@ html {
     font-weight: 400;
     font-family: sans-serif;
 }
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    width: 7rem;
+    height: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hamburger {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 1.1rem;
+    background-color: black;
+}
+
+/* Hamburger 1 */
+#hamburger-one {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#hamburger-one>.line {
+    background-color: red;
+    border-radius: 1rem;
+    transition: .6s ease;
+}
+
+#hamburger-one.animation>.line.mid {
+    background-color: transparent;
+    transition: .2s ease;
+}
+
+#hamburger-one.animation>.line.top {
+    transform-origin: center;
+    transform: translateY(2rem) rotate(45deg);
+    transition: .4s ease;
+}
+
+#hamburger-one.animation>.line.bottom {
+    transform-origin: center;
+    transform: translateY(-2rem) rotate(-45deg);
+    transition: .4s ease;
+}
+
+
+/* Hamburger 2 */
+#hamburger-two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+#hamburger-two>.line {
+    background-color: blue;
+    transition: .4s ease;
+}
+
+#hamburger-two.animation>.line.top {
+    width: 6rem;
+    transition: .4s ease, width .4s ease;
+}
+
+#hamburger-two.animation>.line.mid {
+    width: 4rem;
+    transform: translateY(-.6rem);
+    transition: .4s ease, width .4s ease;
+}
+
+#hamburger-two.animation>.line.bottom {
+    width: 2rem;
+    transform: translateY(-1.2rem);
+    transition: .4s ease;
+}
+
+
+/* Hamburger 3 */
+#hamburger-three {
+    position: relative;
+}
+
+#hamburger-three>.line {
+    background-color: green;
+    border-radius: .5rem;
+    position: absolute;
+    transition: .4s ease;
+}
+
+#hamburger-three>.line.top {
+    top: 0;
+}
+
+#hamburger-three>.line.mid {
+    top: 2rem;
+}
+
+#hamburger-three>.line.bottom {
+    top: 4rem;
+}
+
+#hamburger-three.animation>.line.top {
+    width: 5rem;
+    transition: .4s ease;
+}
+
+#hamburger-three.animation>.line.mid {
+    width: 3rem;
+    transition: .4s ease;
+}
+
+#hamburger-three.animation>.line.bottom {
+    width: 1.5rem;
+    transition: .4s ease;
+}
+
+
+/* Hamburger 4 */
+#hamburger-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    transition: .2s ease-in;
+}
+
+#hamburger-four>.line {
+    background-color: aqua;
+}
+
+#hamburger-four.animation {
+    gap: 1.8rem;
+    transition: .2s ease-out;
+}
+
+
+/* Hamburger 5 */
+#hamburger-five {
+    position: relative;
+}
+
+#hamburger-five>.line {
+    background-color: purple;
+    position: absolute;
+    transition: .4s ease;
+}
+
+#hamburger-five>.line.top {
+    top: 0;
+}
+
+#hamburger-five>.line.mid {
+    top: 2rem;
+}
+
+#hamburger-five>.line.bottom {
+    top: 4rem;
+}
+
+#hamburger-five.animation>.line.top,
+#hamburger-five.animation>.line.bottom {
+    top: 2rem;
+    transform: rotateZ(45deg);
+    transition: .2s linear, transform .2s .2s linear;
+}
+
+#hamburger-five.animation>.line.mid {
+    transform: rotateZ(-45deg);
+    transition: .2s .2s linear;
+}

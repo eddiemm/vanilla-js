@@ -70,7 +70,8 @@ header {
 
 #hamburger-one.animation>.line.mid {
     background-color: transparent;
-    transition: .2s ease;
+    transform: translateX(-5rem);
+    transition: .2s ease, transform .2s linear;
 }
 
 #hamburger-one.animation>.line.top {
@@ -81,7 +82,7 @@ header {
 
 #hamburger-one.animation>.line.bottom {
     transform-origin: center;
-    transform: translateY(-2rem) rotate(-45deg);
+    transform: translateY(-2.2rem) rotate(-45deg);
     transition: .4s ease;
 }
 
@@ -162,19 +163,69 @@ header {
 #hamburger-four {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: start;
     gap: 1rem;
-    transition: .2s ease-in;
 }
 
 #hamburger-four>.line {
     background-color: aqua;
+    transition: .4s ease;
 }
 
-#hamburger-four.animation {
-    gap: 1.8rem;
-    transition: .2s ease-out;
+#hamburger-four.animation>.line.top {
+    width: 0;
+    transform: translateY(2rem);
+    transition: .1s linear;
+    animation: shrink .1s linear forwards, brtotl .1s .1s linear forwards, expand .1s .2s linear forwards;
+}
+
+#hamburger-four.animation>.line.mid {
+    width: 0;
+    transition: .1s linear;
+}
+
+#hamburger-four.animation>.line.bottom {
+    width: 0;
+    transform: translateY(-2rem);
+    transition: .1s linear;
+    animation: shrink .1s linear forwards, trtobl .1s .1s linear forwards, expand .1s .2s linear forwards;
+}
+
+@keyframes shrink {
+    to {
+        width: 0;
+    }
+}
+
+@keyframes brtotl {
+    from {
+        transform: rotateZ(0);
+    }
+
+    to {
+        transform: translateY(2rem) rotateZ(-45deg);
+    }
+}
+
+@keyframes trtobl {
+    from {
+        transform: rotateZ(0);
+    }
+
+    to {
+        transform: translateY(-2rem) rotateZ(45deg);
+    }
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 
@@ -205,10 +256,10 @@ header {
 #hamburger-five.animation>.line.bottom {
     top: 2rem;
     transform: rotateZ(45deg);
-    transition: .2s linear, transform .2s .2s linear;
+    transition: .1s linear, transform .1s .1s linear;
 }
 
 #hamburger-five.animation>.line.mid {
     transform: rotateZ(-45deg);
-    transition: .2s .2s linear;
+    transition: .1s .1s linear;
 }

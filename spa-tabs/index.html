@@ -10,7 +10,33 @@
     <title>SPA Tabs</title>
 </head>
 <body>
+    <nav>
+        <ul class="tab-container">
+            <li id="home-tab" class="tab active" onclick="activate(this, 'home-page')">Home</li>
+            <li id="about-tab" class="tab" onclick="activate(this, 'about-page')">About</li>
+            <li id="more-tab" class="tab" onclick="activate(this, 'more-page')">More</li>
+        </ul>
+    </nav>
+
+    <div class="content-area">
+
+        <main id="home-page" class="page active">
+            <h2 class="page-header">Home</h2>
+            <p class="page-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ratione quidem minima aspernatur error debitis tenetur accusamus ipsum sit repellat.</p>
+        </main>
     
+        <main id="about-page" class="page">
+            <h2 class="page-header">About</h2>
+            <p class="page-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ratione quidem minima aspernatur error debitis tenetur accusamus ipsum sit repellat.</p>
+        </main>
+    
+        <main id="more-page" class="page">
+            <h2 class="page-header">More</h2>
+            <p class="page-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ratione quidem minima aspernatur error debitis tenetur accusamus ipsum sit repellat.</p>
+        </main>
+
+    </div>
+
     <script src="index.js" defer></script>
 </body>
 </html>

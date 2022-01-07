@@ -17,10 +17,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #d8c99b;
 }
 
 header {
     font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
@@ -63,7 +65,7 @@ header {
 }
 
 #hamburger-one>.line {
-    background-color: red;
+    background-color: #a4243b;
     border-radius: 1rem;
     transition: .6s ease;
 }
@@ -97,7 +99,7 @@ header {
 }
 
 #hamburger-two>.line {
-    background-color: blue;
+    background-color: #273E47;
     transition: .4s ease;
 }
 
@@ -125,7 +127,7 @@ header {
 }
 
 #hamburger-three>.line {
-    background-color: green;
+    background-color: #d8973c;
     border-radius: .5rem;
     position: absolute;
     transition: .4s ease;
@@ -169,7 +171,7 @@ header {
 }
 
 #hamburger-four>.line {
-    background-color: aqua;
+    background-color: #175676;
     transition: .4s ease;
 }
 
@@ -235,7 +237,7 @@ header {
 }
 
 #hamburger-five>.line {
-    background-color: purple;
+    background-color: #bd632f;
     position: absolute;
     transition: .4s ease;
 }
